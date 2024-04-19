@@ -1,5 +1,9 @@
-# A placeholder for an opensource project to allow anyone to extract data from files and store them in vector supported knowledge graphs
+# Project Placeholder: Open Source Data Extraction and Knowledge Graph Storage
 
-# Mainly a pet project to test out some fun javascript concepts i wanna try out. 
+This project serves as a playground to explore exciting JavaScript concepts. The goal is to develop an open-source solution that enables anyone to extract data from various files and store this information in knowledge graphs that support vector operations.
 
-# Might also make some template azure functions code available for running autogen there, or i make it maybe power automate custom connector, will need to see. 
+## Potential Extensions:
+- I might include sample Azure Functions code to demonstrate automation capabilities on Azure.
+- Alternatively, I could develop this as a custom connector for Power Automate, depending on further assessment.
+
+This is primarily a pet project to experiment with new ideas and technologies.
