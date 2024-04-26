@@ -1,0 +1,92 @@
+.tutorial-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.video-description-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#tutorial-video {
+    flex: 3;
+}
+
+#tutorial-video iframe {
+    width: 100%;
+    height: 315px;
+}
+
+#tutorial-description {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.code-output-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#output {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-right: 20px;
+    color: darkgrey; /* Text color for output */
+    height: 400px;
+}
+
+#code-editor {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 10px;
+    flex: 1;
+}
+
+
+
+#copyButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #c0c0c0; /* Discrete grey background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#copyButton:active {
+    background-color: #86c232; /* Color when clicked */
+}
+
+#copyButton:after {
+    content: '\2714'; /* Unicode checkmark */
+    display: none;
+    color: white;
+}
+
+#copyButton.copied:after {
+    display: block;
+}
+#code-editor textarea {
+    width: 100%;
+    height: 320px; /* Height adjusted */
+    margin-bottom: 10px;
+    color: darkgrey;
+    font-family: monospace; /* Optional: To give it a code-like appearance */
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #0084ff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tester HTML</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: #f8f8f8; }
+  h1 { color: #333; }
+  #dynamicContent { padding: 20px; background-color: #fff; border-radius: 8px; margin: 10px 0; }
+</style>
+</head>
+<body>
+
+<h1>Interactive HTML Content</h1>
+<div id="dynamicContent">Click the button to change this text.</div>
+<button onclick="updateContent()">Click Me!</button>
+
+<script>
+  function updateContent() {
+    document.getElementById('dynamicContent').textContent = 'Content updated!';
+  }
+</script>
+
+</body>
+</html>

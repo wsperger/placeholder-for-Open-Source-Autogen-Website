@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Getting Started with Power Pages | Power Pages Academy</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Sidebar -->
+            <section id="sidebar">
+                <div class="inner">
+                    <nav>
+                        <ul>
+                            <li><a href="#intro">Welcome</a></li>
+                            <li><a href="#tutorials">Tutorials</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="index.html">Main Site</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Intro -->
+                    <section id="intro" class="wrapper style1 fullscreen fade-up">
+                        <div class="inner">
+                            <h1>Getting Started with Power Pages</h1>
+                            <p>This guide will help you begin your journey with Microsoft Power Pages, covering everything from initial setup to creating your first page. <br />
+                            Follow the steps below to learn about the basics of Power Pages and find resources to help you build sophisticated websites.</p>
+                            <ul class="actions">
+                                <li><a href="#tutorials" class="button scrolly">Explore Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                <!-- Tutorials -->
+<section id="tutorials" class="wrapper style2 spotlights">
+    <div class="inner">
+        <h2>Tutorials</h2>
+        <p>Explore our step-by-step tutorials designed to help you master Power Pages. These tutorials cover a range of topics from basic page design to advanced functionalities.</p>
+        
+        <!-- Search and Category Filter -->
+        <!-- Search and Category Filter -->
+<div class="search-and-filter">
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search tutorials..." onkeyup="filterTutorials()">
+    <select id="categoryFilter" class="category-dropdown" onchange="filterTutorials()">
+        <option value="all">All Categories</option>
+        <!-- Other categories will be populated from tutorials.json -->
+    </select>
+</div>
+
+
+        <!-- Table for tutorials -->
+        <table id="tutorialsTable">
+            <thead>
+                
+            </thead>
+            <tbody>
+                <!-- Content filled by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Pagination controls -->
+        <div id="pagination">
+            <button onclick="previousPage()">Previous</button>
+            <span id="pageInfo"></span>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+    </div>
+</section>
+
+<script src="../js/pagination.js"></script>
+
+
+                <!-- FAQ -->
+                    <section id="faq" class="wrapper style3 fade-up">
+                        <div class="inner">
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Got questions? We have answers. This FAQ section addresses common queries and provides helpful insights into using Power Pages effectively.</p>
+                            <div class="split style1">
+                                <section>
+                                    <ul class="faq">
+                                        <li>
+                                            <h3>How do I sign up for Power Pages?</h3>
+                                            <p>Visit the official Microsoft Power Pages website and follow the sign-up process to start your subscription.</p>
+                                        </li>
+                                        <li>
+                                            <h3>What are the system requirements for Power Pages?</h3>
+                                            <p>Power Pages requires an internet connection and a modern web browser. Specific requirements are listed on the Microsoft website.</p>
+                                        </li>
+                                        <li>
+                                            <h3>Can I integrate Power Pages with other Microsoft services?</h3>
+                                            <p>Yes, Power Pages seamlessly integrates with many Microsoft services such as Power BI, Power Automate, and Dynamics 365.</p>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer" class="wrapper style1-alt">
+                <div class="inner">
+                    <ul class="menu">
+                        <li>&copy; Power Pages Academy. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/jquery.scrollex.min.js"></script>
+            <script src="../js/jquery.scrolly.min.js"></script>
+            <script src="../js/browser.min.js"></script>
+            <script src="../js/breakpoints.min.js"></script>
+            <script src="../js/util.js"></script>
+            <script src="../js/main.js"></script>
+            <style>
+                .tutorial-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.video-content {
+    /* The video maintains its aspect ratio but is 50% the height of the original */
+    /* For a standard 16:9 aspect ratio video, the width is set to 88.9% of the height to maintain the aspect ratio */
+    flex: 0 0 calc(315px / 2 * (16 / 9)); 
+    height: calc(315px / 2);
+}
+
+.video-content iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tutorial-entry {
+        flex-direction: column;
+    }
+
+    .video-content {
+        order: -1; /* Video comes first */
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .video-content iframe {
+        height: calc(560px / (16 / 9)); /* Adjusted height for mobile screens */
+    }
+}
+.search-and-filter {
+    display: flex;
+    margin-bottom: 20px; /* Or any space you want between this and the table */
+}
+
+.search-bar {
+    flex: 7; /* Takes 70% of the space */
+    margin-right: 10px; /* Optional space between elements */
+}
+
+.category-dropdown {
+    flex: 3; /* Takes 30% of the space */
+}
+
+
+            </style>
+
+    </body>
+</html>
